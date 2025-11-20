@@ -61,7 +61,7 @@ jobs:
     - name: Build HandBrake
       run: |
         cd HandBrake
-        ./configure
+        ./configure --enable-libdovi
         cd build
         make ub && make pkg.create
 
